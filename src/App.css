@@ -1,0 +1,87 @@
+.none {
+  display: none !important;
+}
+
+body {
+  background: rgba(0, 102, 255, 0.38);
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0 0 5px;
+}
+
+.news {
+
+}
+
+.article {
+  background: #FFF;
+  border: 1px solid rgba(0, 89, 181, 0.82);
+  width: 600px;
+  margin: 0 0 5px;
+  box-shadow: 2px 2px 5px -1px rgb(0, 81, 202);
+  padding: 3px 5px;
+}
+
+.article-author {
+  text-decoration: underline;
+  color: #007DDC;
+}
+
+.article-title {
+  text-align: center;
+}
+
+.article-text {
+  text-align: left;
+}
+
+.article-more {
+  color: darkslateblue;
+}
+
+.none {
+  display: none !important;
+}
+
+.news-count {
+  margin: 10px 0 0 0;
+  display: block;
+}
+
+.test-input{
+  margin: 0 5px 5px 0;
+}
+
+.add-article-form {
+  margin: 0 5px 5px 0;
+  width: 210px;
+  border: 1px dashed rgba(0, 89, 181, 0.82);
+  padding: 5px;
+}
+
+.add-article-author, .add-article-title, .add-article-text, .add-article-button, .add-article-checkrule {
+  display: block;
+  margin: 0 0 5px 0;
+  padding: 5px;
+  width: 94%;
+  border: 1px solid rgba(0, 89, 181, 0.82);
+}
+
+.add-article-checkrule {
+  border: none;
+  font-size: 12px;
+}
+
+.add-article-button {
+  box-sizing: content-box;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #007DDC;
+}
+
+.add-article-button:disabled {
+  background: #CCC;
+  color: #999;
+}
