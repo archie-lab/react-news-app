@@ -1,28 +1,28 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import News from "./components/News";
-import AddArticle from "./components/AddArticle";
+import News from './components/News';
+import AddArticle from './components/AddArticle';
 
 class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {news: NEWS};
     this.onAddArticle = this.onAddArticle.bind(this);
   }
 
-  onAddArticle(article) {
+  onAddArticle (article) {
     this.setState((prevState) => {
-      news: prevState.news.concat(article)
+      news: prevState.news.concat(article);
     });
   }
 
-  render() {
+  render () {
     return (
-        <div className="app">
-          <h3>News</h3>
-          <AddArticle onAddArticle={this.onAddArticle}/>
-          <News data={this.state.news}/>
-        </div>
+      <div className="app">
+        <h3>News</h3>
+        <AddArticle onAddArticle={this.onAddArticle} />
+        <News data={this.state.news} />
+      </div>
     );
   }
 }
